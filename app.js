@@ -3,7 +3,7 @@ const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className
 const dateLabel=d=>new Date(d+'T12:00:00Z').toLocaleDateString('en-AU',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'});
 const safeLink=(label,url)=>{const a=el('a','',label);try{const u=new URL(url);if(u.protocol!=='https:')throw Error();a.href=u.href;a.target='_blank';a.rel='noopener noreferrer';}catch{a.removeAttribute('href');}return a;};
 function toast(message){const t=document.querySelector('#toast');t.textContent=message;t.classList.add('show');clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>t.classList.remove('show'),4000);}
-function badge(text){return el('span','status '+(/Booked|booked|Date confirmed/.test(text)?'green':/Conditional|needed|Waiting|hold/.test(text)?'amber':''),text);}
+function badge(text){return el('span','status '+(/^(Booked|Flight booked|Date confirmed)$/.test(text)?'green':/Conditional|needed|Waiting|hold/.test(text)?'amber':''),text);}
 function render(data){
  document.querySelector('#notice').textContent=data.notice;document.querySelector('#updated').textContent='Updated '+dateLabel(data.updated);document.querySelector('#task-count').textContent=data.tasks.length;
  const timeline=document.querySelector('#timeline');
@@ -12,7 +12,7 @@ function render(data){
  data.tasks.forEach(t=>{const card=el('article','task');card.append(el('p','overline',t.owner),el('h3','',t.title),el('p','',t.detail),badge(t.status));document.querySelector('#tasks').append(card);});
  data.sources.forEach(s=>document.querySelector('#sources').append(safeLink(s.label,s.url)));
 }
-document.querySelectorAll('[data-tab]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-tab]').forEach(b=>b.setAttribute('aria-selected',String(b===button)));document.querySelectorAll('.panel').forEach(p=>p.hidden=p.id!==button.dataset.tab);}));
+document.querySelectorAll('[data-tab]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-tab]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));document.querySelectorAll('.panel').forEach(p=>p.hidden=p.id!==button.dataset.tab);}));
 document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});document.querySelectorAll('.event').forEach(e=>e.hidden=button.dataset.filter!=='all'&&e.dataset.category!==button.dataset.filter);}));
 document.querySelector('#print').addEventListener('click',()=>{document.querySelectorAll('.event').forEach(e=>e.hidden=false);window.print();document.querySelector('.filter.active').click();});
 document.querySelector('#share').addEventListener('click',async()=>{if(['localhost','127.0.0.1',''].includes(location.hostname)){toast('This is the local preview. A shareable link will be available after publishing.');return;}try{await navigator.clipboard.writeText(location.href.split('#')[0]);toast('Plan link copied — ready to share with the crew.');}catch{toast('Copy the page address from your browser to share the plan.');}});
