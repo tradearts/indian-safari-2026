@@ -2,44 +2,180 @@
   "title": "Indian safari",
   "subtitle": "A wedding in Bengaluru. A little adventure after.",
   "updated": "2026-10-25",
-  "repository": "",
-  "notice": "Waiting on Max: what time does the final event on 26 November finish, and is anything planned for the 27th? That decides when we can leave for Hampi.",
+  "repository": "https://github.com/tradearts/indian-safari-2026",
+  "notice": "Airbnb confirmed for 19–27 November, four guests. Max says there is nothing on the 27th; the final wedding event on the 26th is expected to finish at night. The current idea is to head to Hampi by road on the 27th. Driver or hire car, departure time and return arrangements still need agreeing.",
   "events": [
-    {"date":"2026-11-19","title":"First arrivals in Bengaluru","category":"travel","status":"Confirm details","time":"Arrivals throughout the day","place":"Bengaluru","notes":"Brodie’s shared itinerary arrives on the 19th. Confirm everyone else’s local arrival date before setting the Airbnb check-in; an 18 November departure can arrive on the 19th."},
-    {"date":"2026-11-20","title":"Bryce joins the crew","category":"travel","status":"Booked","time":"15:45 arrival · India time","place":"Bengaluru airport (BLR)","notes":"Direct Qantas flight from Sydney. Airport transfer and meeting point still to arrange."},
-    {"date":"2026-11-21","title":"Settle in","category":"free","status":"Open day","time":"Keep it flexible","place":"Bengaluru","notes":"Time to settle in and sort outfits. Max’s guidance was to bring a normal suit and arrange a traditional outfit locally; confirm which outfit goes with each event."},
-    {"date":"2026-11-22","title":"Wedding celebrations","category":"wedding","status":"Date confirmed","time":"Start and finish TBC","place":"Dollars Colony","notes":"Exact address, arrival time and group transport still to be confirmed with Max."},
-    {"date":"2026-11-23","title":"A day in the city","category":"free","status":"Open day","time":"Keep it flexible","place":"Bengaluru","notes":"No wedding activity confirmed for today. Leave room for plans from the wedding group."},
-    {"date":"2026-11-24","title":"The first main event","category":"wedding","status":"Date confirmed","time":"Start and finish TBC","place":"The Leela Palace Bengaluru","notes":"Event programme, dress code and transport to be confirmed."},
-    {"date":"2026-11-25","title":"Catch our breath","category":"free","status":"Open day","time":"Keep it flexible","place":"Bengaluru","notes":"A flexible day between the two main events. Check for any additional wedding activities."},
-    {"date":"2026-11-26","title":"The final main event","category":"wedding","status":"Finish time needed","time":"End time TBC","place":"The Leela Palace Bengaluru","notes":"Brodie says this is the last event. Max has been asked to confirm the finish time and whether anything follows on the 27th. Do not book the Hampi departure around an assumed finish."},
-    {"date":"2026-11-26","title":"Possible overnight train to Hampi","category":"hampi","status":"Conditional","time":"21:50 → 07:00 next morning*","place":"KSR Bengaluru (SBC) → Hosapete (HPT)","notes":"Hampi Express 16592, First AC preferred. Only workable if the wedding finishes early enough for luggage collection, traffic and station arrival. If not, investigate a 27 November daytime departure instead; nothing is booked."},
-    {"date":"2026-11-27","title":"Hampi, day one","category":"hampi","status":"Proposed","time":"Arrive, explore, slow down","place":"Hampi","notes":"Transfer from Hosapete, drop bags and explore the ruins. One hotel night proposed: check in 27 November, check out 28 November. Hotel, travellers and local transport still to choose."},
-    {"date":"2026-11-28","title":"Hampi, day two","category":"hampi","status":"Proposed","time":"Return train 21:10*","place":"Hampi → Hosapete → Bengaluru","notes":"A second day exploring, then Hampi Express 16591 overnight to Bengaluru. Arrange luggage storage after hotel checkout and a station transfer. First AC availability and cabin allocation are unconfirmed."},
-    {"date":"2026-11-29","title":"Back to Bengaluru, then home","category":"travel","status":"Flight booked","time":"Train 05:45* · flight 17:30","place":"Bengaluru → Sydney","notes":"Bryce’s Qantas return departs BLR at 17:30. The proposed train arrives at KSR Bengaluru, not the airport. Allow for train delays, the airport transfer and airline check-in; this is a separate, unprotected connection. The rest of the group’s onward plans are TBC."},
-    {"date":"2026-11-30","title":"Touch down in Sydney","category":"travel","status":"Booked","time":"10:30 arrival · Sydney time","place":"Sydney","notes":"Bryce arrives home on Monday morning, the day after leaving India."}
+    {
+      "date": "2026-11-19",
+      "title": "First arrivals & Airbnb check-in",
+      "category": "travel",
+      "status": "Airbnb booked",
+      "time": "Arrivals throughout the day",
+      "place": "Bengaluru",
+      "notes": "Brodie’s shared itinerary arrives on the 19th. The Airbnb booking covers 19–27 November for four guests. Confirm the remaining arrival times and check-in arrangements with Brodie."
+    },
+    {
+      "date": "2026-11-20",
+      "title": "Bryce joins the crew",
+      "category": "travel",
+      "status": "Booked",
+      "time": "15:45 arrival · India time",
+      "place": "Bengaluru airport (BLR)",
+      "notes": "Direct Qantas flight from Sydney. Airport transfer and meeting point still to arrange."
+    },
+    {
+      "date": "2026-11-21",
+      "title": "Settle in",
+      "category": "free",
+      "status": "Open day",
+      "time": "Keep it flexible",
+      "place": "Bengaluru",
+      "notes": "Time to settle in and sort outfits. Max’s guidance was to bring a normal suit and arrange a traditional outfit locally; confirm which outfit goes with each event."
+    },
+    {
+      "date": "2026-11-22",
+      "title": "Wedding celebrations",
+      "category": "wedding",
+      "status": "Date confirmed",
+      "time": "Start and finish TBC",
+      "place": "Dollars Colony",
+      "notes": "Exact address, arrival time and group transport still to be confirmed with Max."
+    },
+    {
+      "date": "2026-11-23",
+      "title": "A day in the city",
+      "category": "free",
+      "status": "Open day",
+      "time": "Keep it flexible",
+      "place": "Bengaluru",
+      "notes": "No wedding activity confirmed for today. Leave room for plans from the wedding group."
+    },
+    {
+      "date": "2026-11-24",
+      "title": "The first main event",
+      "category": "wedding",
+      "status": "Date confirmed",
+      "time": "Start and finish TBC",
+      "place": "The Leela Palace Bengaluru",
+      "notes": "Event programme, dress code and transport to be confirmed."
+    },
+    {
+      "date": "2026-11-25",
+      "title": "Catch our breath",
+      "category": "free",
+      "status": "Open day",
+      "time": "Keep it flexible",
+      "place": "Bengaluru",
+      "notes": "A flexible day between the two main events. Check for any additional wedding activities."
+    },
+    {
+      "date": "2026-11-26",
+      "title": "The final main event",
+      "category": "wedding",
+      "status": "Evening finish expected",
+      "time": "Night-time finish expected · exact time TBC",
+      "place": "The Leela Palace Bengaluru",
+      "notes": "Max says the final event is expected to finish at night and will confirm the exact time. He says nothing is planned for the 27th. Stay in Bengaluru tonight; the earlier 26 November overnight-train idea is no longer the working plan."
+    },
+    {
+      "date": "2026-11-27",
+      "title": "Check out & head to Hampi",
+      "category": "hampi",
+      "status": "Road trip proposed",
+      "time": "Departure time to agree",
+      "place": "Bengaluru → Hampi",
+      "notes": "Airbnb checkout day. Max suggested a driver; Ryan proposed going on the 27th, and Bryce suggested hiring a car and driving. Transport is not booked and no final choice has been made. Confirm the route, travel time, pickup and luggage space. Hampi accommodation is still to book."
+    },
+    {
+      "date": "2026-11-28",
+      "title": "Hampi & the return decision",
+      "category": "hampi",
+      "status": "Proposed",
+      "time": "Explore · return plan TBC",
+      "place": "Hampi → Hosapete → Bengaluru",
+      "notes": "Time in Hampi, then return according to the transport plan the crew agrees. The earlier 21:10 Hosapete overnight train remains an option, not a booking or agreed decision. Decide whether to stay a second hotel night before reserving accommodation; that would require a different return plan."
+    },
+    {
+      "date": "2026-11-29",
+      "title": "Back to Bengaluru, then home",
+      "category": "travel",
+      "status": "Flight booked",
+      "time": "17:30 flight departure · India time",
+      "place": "Bengaluru → Sydney",
+      "notes": "Bryce’s Qantas flight departs Bengaluru airport at 17:30. Set the Hampi return plan around this fixed departure, including road or rail delays, airport transfer and airline check-in. Do not assume a same-day drive will fit without checking the timings. The rest of the group’s onward plans are TBC."
+    },
+    {
+      "date": "2026-11-30",
+      "title": "Touch down in Sydney",
+      "category": "travel",
+      "status": "Booked",
+      "time": "10:30 arrival · Sydney time",
+      "place": "Sydney",
+      "notes": "Bryce arrives home on Monday morning, the day after leaving India."
+    }
   ],
   "stay": {
-    "name":"Urban Escape · 4BHK Spacez Villa with Patio",
-    "location":"Koramangala, Bengaluru",
-    "url":"https://www.airbnb.com.au/rooms/1608623623647906664",
-    "dates":"Working dates: 19–27 November",
-    "status":"Shortlisted · not booked",
-    "lead":"Suggested booking leads: Brodie + Moody — confirm together",
-    "notes":"Bryce joins on the 20th. Set check-in from the earliest confirmed arrival. Keep checkout on the 27th as the working plan until the final wedding finish and Hampi departure are settled. Leaving on the 26th would still need somewhere to change and store bags that day.",
-    "checks":["Confirm arrival dates, total guests and separate beds/rooms before booking.","Agree the exact checkout date and who is continuing to Hampi.","Check the actual route to Leela Palace and transport to Dollars Colony.","Review cancellation terms and the listing’s stated absence of smoke and carbon-monoxide alarms."]
+    "name": "Bengaluru Airbnb · booked by Brodie",
+    "location": "Bengaluru · exact property link to confirm",
+    "url": "https://www.airbnb.com.au/rooms/1608623623647906664",
+    "linkLabel": "Earlier shortlist — booking match unconfirmed ↗",
+    "dates": "Confirmed: 19–27 November · 4 guests",
+    "status": "Booked",
+    "lead": "Booking lead: Brodie",
+    "notes": "Brodie shared an Airbnb reservation confirmation on 25 October showing 19–27 November 2026 and four guests. Bryce arrives on the 20th. The image does not name the property or give its address, so the earlier shortlisted listing is not yet verified as the booked home. The final guest names and room allocation still need confirming.",
+    "checks": [
+      "Get the booked listing link and check-in instructions from Brodie; a follow-up has been sent.",
+      "Confirm the four guest names, arrival times and rooms/beds.",
+      "Confirm checkout time on the 27th and the Hampi pickup plan.",
+      "Arrange transport to Leela Palace and the Dollars Colony event once the exact accommodation address is known."
+    ]
   },
   "tasks": [
-    {"owner":"Max","title":"Confirm the wedding finish","detail":"Final event end time on the 26th, and any activities on the 27th. Asked in Indian safari on 25 October; awaiting reply.","status":"Waiting"},
-    {"owner":"Brodie + Moody","title":"Set the Airbnb dates and rooms","detail":"Suggested leads, pending agreement. Confirm earliest arrival, checkout, headcount and room preferences, then share the chosen stay.","status":"To agree"},
-    {"owner":"Everyone","title":"Who’s in for Hampi?","detail":"Confirm names and onward plans. Three travellers in the earlier train discussion is a working assumption, not a confirmed headcount.","status":"To confirm"},
-    {"owner":"Bryce + Hampi crew","title":"Choose the outbound journey","detail":"Use 26 November overnight only if it fits the wedding. Otherwise check a 27 November daytime option before fixing the hotel dates.","status":"On hold"},
-    {"owner":"Hampi crew","title":"Check trains, hotel and transfers","detail":"Check date-specific First AC tickets and current timetable, choose a hotel and arrange station transfers. A private cabin together is a preference, not a guarantee.","status":"Not booked"},
-    {"owner":"Max + group","title":"Wedding day logistics","detail":"Start times, dress codes, exact Dollars Colony address and transport for 22, 24 and 26 November.","status":"To confirm"}
+    {
+      "owner": "Brodie",
+      "title": "Share the booked Airbnb details",
+      "detail": "Booking confirmed for 19–27 November, four guests. Share the exact listing and check-in details; a follow-up has been sent. Confirm guest names and room allocation.",
+      "status": "Details pending"
+    },
+    {
+      "owner": "Max",
+      "title": "Confirm the final event’s finish time",
+      "detail": "Max expects a night-time finish on the 26th and says nothing is on the 27th. The exact finish time is still to come.",
+      "status": "Partly confirmed"
+    },
+    {
+      "owner": "Hampi crew",
+      "title": "Agree transport for 27 November",
+      "detail": "Driver suggested by Max and Ryan; hire car suggested by Bryce. Agree the option, traveller count, departure time and luggage arrangements before booking.",
+      "status": "To agree"
+    },
+    {
+      "owner": "Hampi crew",
+      "title": "Choose the return plan and hotel nights",
+      "detail": "Protect Bryce’s 17:30 flight on 29 November. The 28 November overnight train is an earlier option, not an agreed booking. Decide the return journey before choosing one or two Hampi hotel nights.",
+      "status": "To agree"
+    },
+    {
+      "owner": "Everyone",
+      "title": "Confirm who’s going to Hampi",
+      "detail": "Confirm the Hampi travellers and everyone’s onward plans. Four guests on the Airbnb reservation does not establish the Hampi headcount.",
+      "status": "To confirm"
+    },
+    {
+      "owner": "Max + group",
+      "title": "Wedding day logistics",
+      "detail": "Start times, dress codes, exact Dollars Colony address and transport for 22, 24 and 26 November remain to confirm.",
+      "status": "To confirm"
+    }
   ],
   "sources": [
-    {"label":"Hampi Express 16592 timetable","url":"https://www.confirmtkt.com/train-schedule/16592-HAMPI-EXPRESS"},
-    {"label":"Hampi Express 16591 timetable","url":"https://www.confirmtkt.com/train-schedule/16591"},
-    {"label":"Indian Railways schedule enquiry","url":"https://www.indianrail.gov.in/enquiry/SCHEDULE/TrainSchedule.jsp"}
+    {
+      "label": "Hampi Express 16591 timetable",
+      "url": "https://www.confirmtkt.com/train-schedule/16591"
+    },
+    {
+      "label": "Indian Railways schedule enquiry",
+      "url": "https://www.indianrail.gov.in/enquiry/SCHEDULE/TrainSchedule.jsp"
+    }
   ]
 }
